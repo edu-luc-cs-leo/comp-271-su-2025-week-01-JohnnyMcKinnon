@@ -1,3 +1,9 @@
+//**Explanation for purpose of arr.length in line86: since the temp arr length is arr.length+1 it holds all the 
+//same elements as arr, but with an additional position. This allows whatever is stored in value to be added at the end
+//of the temporary array. We then make arr=temp so everything in temp is now under the call of our original arr.
+//arr.length in line89 specifically addresses the temporary array and accesses every element, including the +1, which is 
+//where value will be stored.**
+
 import java.util.Arrays; // for printing array
 
 /**
